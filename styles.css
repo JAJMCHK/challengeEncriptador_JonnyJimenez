@@ -142,6 +142,7 @@ li {
   outline: none;
   background-color: var(--colorFondo);
 }
+
 .area__izq textarea:focus {
   border: 0;
   border-color: var(--colorAreaConversion);
