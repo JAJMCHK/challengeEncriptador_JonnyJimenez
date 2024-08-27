@@ -27,6 +27,7 @@ body {
   height: 100vh;
   width: 100%;
 }
+
 html {
   height: fit-content;
   font-size: calc(var(--tamañoLetra) * 1rem);
