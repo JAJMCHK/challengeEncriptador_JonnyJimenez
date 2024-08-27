@@ -333,10 +333,3 @@ li {
   }
   
 }
-
-
-@media only screen and (max-width: 300px) {
-  .seccionDelLogoAlura .logoAlura span {
-    display: none;
-  }
-}
