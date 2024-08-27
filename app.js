@@ -296,6 +296,5 @@ const conversorCaracter = { a: 'ai', e: 'enter', i: 'imes', o: 'ober', u: 'ufat'
   
   }
   
-  
   // Esta linea es para inicializar parametros generales
   condicionesIniciales();
