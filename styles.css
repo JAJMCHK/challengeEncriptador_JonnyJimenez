@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*variables de colores y textos*/
+:root {
+  --colorPrincipal:   #154360;
+  --colorFondo: #f3f5fc;
+  --colorHeader: #d8dfe8;
+  --colorAreaConversion: #ffffff;
+  --colorMens1Der: #343a40;
+  --colorMens2Der: #495057;
+  
+
+  --tipoLetra: "Inter", sans-serif;
+  --tamañoLetra: 1;
+}
+
+/* Establecer la configuración  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--tipoLetra);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(----colorFondo);
+  font-size: 1rem;
+  height: 100vh;
+  width: 100%;
+}
+html {
+  height: fit-content;
+  font-size: calc(var(--tamañoLetra) * 1rem);
+}
+
+.areaDelBody{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+::-ms-input-placeholder {
+  /* Consideración para el navegador Microsoft Edge versiones 12 a 18 */
+  color: var(--colorPrincipal);
+}
+
+/* Para versiones más recientes de el navegador Microsoft Edge (a partir de la versión 79) */
+
+::placeholder {
+  color: var(--colorPrincipal);
+}
+
+
+
+
+/* Características por Secciones */
+
+/* Para el contenido del header del index.html*/
+
+.header {
+  background-color: var(--colorHeader);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3%;
+  
+}
+
+/*Seccion header - "seccionDelLogoAlura"*/
+
+.seccionDelLogoAlura {
+  display: flex;
+  align-items: center;  
+  margin-right: 3%;  
+  width: 100%;
+}
+
+.seccionDelLogoAlura .logoAlura {
+  display: flex;
+  align-items: center;
+}
+
+.seccionDelLogoAlura .logoAlura img {
+  width: auto;
+  height: 48px;
+  margin-right: 5%;
+  transition: all 0.3s;
+}
+
+.seccionDelLogoAlura .logoAlura img:hover {
+  transform: scale(1.2);
+}
+
+.seccionDelLogoAlura .logoAlura span {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--colorPrincipal); 
+}
+/* Fin Seccion Header - "seccionDelLogoAlura"*/
+
+/* Seccion Main*/
+
+.main {
+  display: flex;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  padding: 3%; 
+}
+
+/* Seccion Main - Para la parte izquierda de la pantalla */
+
+.area__izq {
+  width: 65%;
+  height: 100%;
+  margin-right: 3%;  
+  display: flex;
+  flex-direction: column;  
+}
+
+.area__izq textarea {
+  width: 100%;
+  color: var(--colorPrincipal);
+  height: 100%;
+  font-size: 2rem;
+  border: none;
+  resize: none;  
+  outline: none;
+  background-color: var(--colorFondo);
+}
+.area__izq textarea:focus {
+  border: 0;
+  border-color: var(--colorAreaConversion);
+  outline: none;
+}
+
+
+.seccionDeAlerta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--colorMens1Der);
+}
+
+.seccionDeAlerta p {
+  font-size: 0.75rem;
+  
+}
+
+.areaBotonesEncriptarYDesencriptar {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.button {
+  font-size: 1rem;
+  margin-bottom: 2%;
+  width: 100%;
+  background-color: var(--colorPrincipal);
+  padding: 24px 0;
+  border-radius: 24px;
+  color: var(--colorAreaConversion);
+  text-align: center;
+  border: 0px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: var(--colorHeader);
+  border: 2px solid --colorPrincipal;
+  color: var(--colorPrincipal);
+  border: 1px solid var(--colorPrincipal);
+  cursor: auto;
+}
+
+/* Fin Seccion Main - Para la parte izquierda de la pantalla*/
+
+
+/* Seccion Main -  Para la parte derecha de la pantalla*/
+
+.area_der {
+  width: 35%;
+  background-color: var(--colorAreaConversion);
+  box-shadow: 0 24px 32px -8px #00000014;
+  border-radius: 32px;
+  display:flex;    
+  margin: 0; 
+  min-height: 100%;  
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height:fit-content;  
+}
+
+.seccionDeRespuesta {
+  padding: 15%;
+  align-items: center;
+  align-content: center;
+  height: auto;  
+}
+
+.areaDeConversion {
+    
+  width: 100%;
+  padding: 1.5rem;
+  height: auto;  
+}
+
+.area_der p {
+  font-size: 1.5rem;
+  min-height: 70vh;
+  color: var(--colorMens1Der);
+  text-align: left;  
+  width: 100%;
+  height:auto;  
+  margin-bottom: 15px;
+}
+.areaBotonCopiar {  
+  width: 100%;  
+  text-align: center;
+}
+
+.area_der img {
+  width: 100%;
+  min-width: 250px;
+}
+
+.area_der h1 {
+  font-size: 2rem;
+  color: var(--colorMens1Der);
+  text-align: center;  
+}
+
+.area_der h2 {
+  font-size: 1rem;
+  color: var(--colorMens2Der);
+  text-align: center;
+  font-weight: 400;
+  margin-top: 10px;  
+}
+
+/* Fin Seccion Main -  Para la parte derecha de la pantalla*/
+
+
+/*Media queries*/
+
+@media only screen and (max-width: 900px) {
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seccionDelLogoAlura {    
+    justify-content: center;
+    margin: 10px;    
+  }
+
+  .main {
+    flex-direction: column;
+    transition: 0.5s;
+    height: 100%;
+    justify-content: space-between;
+    padding: 4.2%;
+  }
+  
+  .area__izq {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    margin: 15px 0;
+  }
+  .area_der {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    flex: none;
+    min-height: auto;
+  }
+
+  .area_der img {
+    display: none;
+    height: auto;
+  }
+
+  .seccionDeRespuesta {
+    padding: 5%;
+    height: auto;
+  }
+
+  .areaDeConversion {
+    padding: 2% 5%;
+  }
+
+  .areaBotonesEncriptarYDesencriptar {
+    width: 100%;    
+  }
+
+  .areaDeConversion p {
+    height: auto;
+    min-height: auto;    
+  }  
+}
+
+@media only screen and (max-width: 450px) {
+ 
+ .areaBotonesEncriptarYDesencriptar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+  
+}
+
+
+@media only screen and (max-width: 300px) {
+  .seccionDelLogoAlura .logoAlura span {
+    display: none;
+  }
+}
