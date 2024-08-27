@@ -109,12 +109,6 @@ li {
   transform: scale(1.2);
 }
 
-.seccionDelLogoAlura .logoAlura span {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 1.5rem;
-  color: var(--colorPrincipal); 
-}
 /* Fin Seccion Header - "seccionDelLogoAlura"*/
 
 /* Seccion Main*/
